@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+   <h2>Survey</h2>
+   <hr>
+
+   <h3>About You</h3>
+   <h4>Name (Required)</h4>
+   <input type="text" name="" id="name" class="form-control" required>
+
+   <h4>Link to Photo (Required)</h4>
+   <input type="text" name="" id="photo" class="form-control" required>
+
+   <hr>
+
+   <h3>Question 1</h3>
+   <h4>You like Dogs.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q1">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 2</h3>
+   <h4>You like beaches.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q2">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 3</h3>
+   <h4>You like karaoke.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q3">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 4</h3>
+   <h4>You like MMORPGs.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q4">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 5</h3>
+   <h4>You like sparkling over flat water.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q5">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 6</h3>
+   <h4>You like traveling.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q6">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 7</h3>
+   <h4>You like cats.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q7">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 8</h3>
+   <h4>You like Dogs.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q8">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 9</h3>
+   <h4>You like sleeping whenever possible.</h4>
+   <Select data-placeholder="" class="chosen-select" id="q9">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <h3>Question 10</h3>
+   <h4>You like wine.</h4>
+   <Select data-placeholder=""  class="chosen-select" id="q10">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+   </Select>
+
+   <br>
+   <br>
+   <br>
+
+   <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true">Submit</i></button>
+   
+   <br>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/tables">API Friends List</a> | <a href="/api/waitlist">GitHub Repo</a>
+      </div>
+    </footer>
+
+  </div>
+
+<div>
+<div class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        
+    </div>
+</div>
+
+</div>
+
+
+</body>
+
+<script>
+$("#submit").on("click", function() {
+    function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+        });
+
+        $(".chosen-select").each(function() {
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+        });
+        return isValid;
+    }
+
+    if (validateForm()) {
+        var = userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val(),
+            ]
+        };
+
+        var currentURL = window.location.origin;
+
+        $.post(currentURL + "/api/friends", userData, function(data) {
+            alert("workimg");
+        });
+    }
+})
+</script>
+</html>
